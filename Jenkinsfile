@@ -8,12 +8,13 @@ pipeline {
     WORKSPACE = "${env.WORKSPACE}"
   }
  tools {
-                bat 'C:/Users/bharg/Downloads/Maven/apache-maven-3.9.6/bin/mvn clean'
+     maven ''
   }
   stages {
     stage('Build') {
       steps {
-        sh 'mvn clean package'
+         bat 'C:/Users/bharg/Downloads/Maven/apache-maven-3.9.6/bin/mvn clean'
+ 
       }
       post {
         success {
