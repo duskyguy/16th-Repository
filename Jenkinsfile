@@ -35,7 +35,9 @@ pipeline {
     }
     stage ('Checkstyle Code Analysis'){
         steps {
-            sh 'mvn checkstyle:checkstyle'
+           // sh 'mvn checkstyle:checkstyle'
+                    bat 'C:/Users/bharg/Downloads/Maven/apache-maven-3.9.6/bin/mvn checkstyle:checkstyle'
+
         }
         post {
             success {
