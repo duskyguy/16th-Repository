@@ -7,7 +7,9 @@ pipeline {
   environment {
     WORKSPACE = "${env.WORKSPACE}"
   }
- 
+ tools {
+    maven 'mvn'
+  }
   stages {
     stage('Build') {
       steps {
