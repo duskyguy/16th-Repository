@@ -23,7 +23,7 @@ pipeline {
     }
     stage('Unit Test'){
         steps {
-            sh 'mvn test'
+         bat 'C:/Users/bharg/Downloads/Maven/apache-maven-3.9.6/bin/mvn test'
         }
     }
     stage('Integration Test'){
