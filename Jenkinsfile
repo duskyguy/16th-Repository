@@ -28,7 +28,9 @@ pipeline {
     }
     stage('Integration Test'){
         steps {
-          sh 'mvn verify -DskipUnitTests'
+         // sh 'mvn verify -DskipUnitTests'
+                     bat 'C:/Users/bharg/Downloads/Maven/apache-maven-3.9.6/bin/mvn verify -DskipUnitTests'
+
         }
     }
     stage ('Checkstyle Code Analysis'){
