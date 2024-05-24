@@ -12,7 +12,7 @@ pipeline {
    
     stage('SonarQube Scan') {
       steps {
-        bat """mvn sonar:sonar \
+        bat """C:/Users/bharg/Downloads/Maven/apache-maven-3.9.6/bin/mvn sonar:sonar \
               -Dsonar.projectKey=JavaWebApp \
               -Dsonar.host.url=http:localhost:9000 \
               -Dsonar.login=26684937d2214b3438509d6c4fd35697fdd312ce"""
