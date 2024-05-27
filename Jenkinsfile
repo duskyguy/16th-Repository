@@ -14,9 +14,9 @@ pipeline {
       steps {
         bat """C:/Users/bharg/Downloads/Maven/apache-maven-3.9.6/bin/mvn -X sonar:sonar \
               -Dsonar.projectKey=JavaWebApp \
-              -Dsonar.host.url=http:localhost:9000 \
-              -Dsonar.login=26684937d2214b3438509d6c4fd35697fdd312ce"""
+              -Dsonar.host.url=http:localhost:9000 \"""
          // bat 'C:\Users\bharg\Downloads\sonarqube-developer-9.9.5.90363\sonarqube-9.9.5.90363\bin'
+         //-Dsonar.login=26684937d2214b3438509d6c4fd35697fdd312ce
       }
     }
    
