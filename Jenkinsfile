@@ -14,6 +14,8 @@ script{
 withsonarqubeEnv('Sonarqube'){
         bat "C:/Users/bharg/Downloads/Maven/apache-maven-3.9.6/bin/mvn -X sonar:sonar"
 }
+            bat "C:/Users/bharg/Downloads/Maven/apache-maven-3.9.6/bin/mvn clean"
+
 }
 }
 
