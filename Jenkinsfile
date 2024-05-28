@@ -17,6 +17,6 @@ withsonarqubeEnv('Sonarqube'){
 }
 
  
-}
+}}
 
 //slackSend channel: '#mbandi-cloudformation-cicd', message: "Please find the pipeline status of the following ${env.JOB_NAME ${env.BUILD_NUMBER} ${env.BUILD_URL}"
