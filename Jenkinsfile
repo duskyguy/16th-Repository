@@ -7,6 +7,7 @@ pipeline {
   environment {
     WORKSPACE = "${env.WORKSPACE}"
   }
+    stages {
  stage('Status Check'){
 steps{
 script{
