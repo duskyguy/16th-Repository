@@ -11,10 +11,10 @@ pipeline {
    
     stage('SonarQube Scan') {
       steps {
-        bat """C:/Users/bharg/Downloads/Maven/apache-maven-3.9.6/bin/mvn -X sonar:sonar \
+        bat """C:/Build/apache-maven-3.9.8/bin/mvn -X sonar:sonar \
               -Dsonar.projectKey=JavaWebApp \
               -Dsonar.host.url=http:localhost:9000\
-              -Dsonar.login=squ_2414e61c504101657677f56fd19799ba702dcb78"""
+              -Dsonar.login=sqa_1fab6df7f1a4c6069f537d97f42f9e24aefc99dc"""
          // bat 'C:\Users\bharg\Downloads\sonarqube-developer-9.9.5.90363\sonarqube-9.9.5.90363\bin'
       }
     }
